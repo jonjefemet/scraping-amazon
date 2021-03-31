@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon",
-    "swagger-autogen": "node ./config/swagger.js"
+    "swagger-autogen": "node ./config/swagger.js",
+    "knex": "knex"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,9 @@
     "consign": "^0.1.6",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "knex": "^0.95.4",
     "puppeteer": "^8.0.0",
+    "sqlite3": "^5.0.2",
     "swagger-autogen": "^2.7.6",
     "swagger-ui-express": "^4.1.6"
   },
