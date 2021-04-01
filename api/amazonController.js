@@ -1,4 +1,5 @@
 const puppeteer = require("puppeteer");
+const connection = require("../database/connection")
 
 exports.getInfoWeb = async (req, res) => {
     let response = {
@@ -98,4 +99,11 @@ exports.getInfoWeb = async (req, res) => {
     }
     await browser.close()
     res.json(response)
+}
+
+exports.test = async (req, res) => {
+    const info = await connection('todos')
+
+    res.json(info)
+    //res.send("Kokoro no Junbi OK!")
 }
