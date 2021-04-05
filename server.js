@@ -16,6 +16,7 @@ consign()
     .include("/config/middlewares.js")
     .then("./api")
     .then("./config/routes.js")
+    .then("./config/swagger.js")
     .into(app)
 
 app.use((req, res) => {

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon",
-    "swagger-autogen": "node ./config/swagger.js",
+    "swagger-autogen": "node ./swagger/run.js",
     "knex": "knex"
   },
   "repository": {
