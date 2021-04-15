@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "nodemon PORT=9000",
     "swagger-autogen": "node ./swagger/run.js",
     "knex": "knex"
   },

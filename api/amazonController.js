@@ -102,8 +102,12 @@ exports.getInfoWeb = async (req, res) => {
 }
 
 exports.test = async (req, res) => {
-    const info = await connection('todos')
+    let conn = await connection
+    let a = await conn('users').insert({username: "nose",email: "pana", password : "1234"})
+    console.log(a);
+    res.json(await conn.from('users'))
 
-    res.json(info)
+
+    //res.json(info)
     //res.send("Kokoro no Junbi OK!")
 }
